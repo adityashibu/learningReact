@@ -10,7 +10,9 @@ export default function FancyCard() {
                 <View>
                     <Image
                         style={styles.cardImage}
-                        source={require()}
+                        source={{
+                            uri: 'https://www.cntower.ca/sites/default/files/images/tickets_0.jpg'
+                        }}
                     />
                 </View>
             </View>
