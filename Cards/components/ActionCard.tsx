@@ -12,7 +12,7 @@ export default function ActionCard() {
             <Text style={styles.headingtext}>Action Card</Text>
             <View style={[styles.card, styles.elevated]}>
                 <View style={styles.headingContainer}>
-                    <Text style={styles.headingtext}>
+                    <Text style={[styles.headingtext, { color: 'black' }]}>
                         Explore whats new in the world of food
                     </Text>
                 </View>
