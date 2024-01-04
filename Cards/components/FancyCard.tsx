@@ -14,7 +14,7 @@ export default function FancyCard() {
                     }}
                 />
                 <View style={styles.cardBody}>
-                    <Text style={styles.cardTitle}>Hello world</Text>
+                    <Text style={styles.cardTitle}>CN Tower</Text>
                     <Text style={styles.cardLabel}>
                         Located in Toronto, Canada
                     </Text>
@@ -48,8 +48,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         margin: 3,
-        height: 100,
+        height: 400,
         width: 300,
+        marginHorizontal: 16,
+        marginBottom: 20,
+        backgroundColor: 'lightgray',
     },
 
     cardElevated: {
@@ -57,20 +60,29 @@ const styles = StyleSheet.create({
     },
 
     cardImage: {
-        height: 100,
-        width: 200,
+        height: 180,
+        width: 260,
         borderRadius: 4,
     },
 
     cardTitle: {
         fontFamily: 'monospace',
-        fontSize: 15,
+        fontSize: 30,
+        fontWeight: 'bold',
+        paddingTop: 10,
+    },
+
+    cardLabel: {
+        marginRight: 10,
         fontWeight: 'bold',
     },
 
-    cardLabel: {},
+    cardDescription: {
+        paddingTop: 10,
+    },
 
-    cardDescription: {},
-
-    cardFooter: {},
+    cardFooter: {
+        paddingTop: 10,
+        fontWeight: 'bold',
+    },
 });
