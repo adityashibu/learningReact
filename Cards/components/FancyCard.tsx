@@ -55,8 +55,15 @@ const styles = StyleSheet.create({
         backgroundColor: 'lightgray',
     },
 
+    cardBody: {
+        flex: 1,
+        flexGrow: 1,
+        paddingHorizontal: 10,
+    },
+
     cardElevated: {
         elevation: 5,
+        shadowColor: 'black',
     },
 
     cardImage: {
@@ -70,15 +77,18 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         paddingTop: 10,
+        color: 'black',
     },
 
     cardLabel: {
         marginRight: 10,
         fontWeight: 'bold',
+        color: 'black',
     },
 
     cardDescription: {
         paddingTop: 10,
+        color: 'black',
     },
 
     cardFooter: {
