@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     cardBody: {
         flex: 1,
         flexGrow: 1,
-        paddingHorizontal: 10,
+        paddingHorizontal: 15,
     },
 
     cardElevated: {
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
         height: 180,
         width: 260,
         borderRadius: 4,
+        marginTop: 15,
     },
 
     cardTitle: {
