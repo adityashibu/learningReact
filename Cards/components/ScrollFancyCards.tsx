@@ -7,7 +7,7 @@ export default function ScrollFancyCards() {
         <View>
             <View>
                 <View style={styles.container}>
-                    <Text style={styles.headingtext}>Scroll Cards</Text>
+                    <Text style={styles.headingtext}>Scroll Fancy Cards</Text>
                 </View>
                 <ScrollView horizontal={true} style={styles.ScrollCard} showsHorizontalScrollIndicator={false}>
                     <View style={[styles.card, styles.cardElevated]}>
@@ -35,19 +35,19 @@ export default function ScrollFancyCards() {
                         <Image
                             style={styles.cardImage}
                             source={{
-                                uri: 'https://www.cntower.ca/sites/default/files/images/tickets_0.jpg',
+                                uri: 'https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg',
                             }}
                         />
                         <View style={styles.cardBody}>
-                            <Text style={styles.cardTitle}>CN Tower</Text>
+                            <Text style={styles.cardTitle}>Taj Mahal</Text>
                             <Text style={styles.cardLabel}>
-                                Located in Toronto, Canada
+                                Located in Agra, India
                             </Text>
                             <Text style={styles.cardDescription}>
-                                The CN Tower is a 553.3 m-high concrete communications and observation tower in Toronto, Ontario, Canada. Completed in 1976, it is located in downtown Toronto, built on the former Railway Lands.
+                                The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor
                             </Text>
                             <Text style={styles.cardFooter}>
-                                20 mins away
+                                3.4 hours away
                             </Text>
                         </View>
                     </View>
@@ -56,19 +56,19 @@ export default function ScrollFancyCards() {
                         <Image
                             style={styles.cardImage}
                             source={{
-                                uri: 'https://www.cntower.ca/sites/default/files/images/tickets_0.jpg',
+                                uri: 'https://lh3.googleusercontent.com/p/AF1QipOZSVV2LjIFtPplrDreEn-6EKdRHUWT6aD0oXJY=s680-w680-h510',
                             }}
                         />
                         <View style={styles.cardBody}>
-                            <Text style={styles.cardTitle}>CN Tower</Text>
+                            <Text style={styles.cardTitle}>Burj Khalifa</Text>
                             <Text style={styles.cardLabel}>
-                                Located in Toronto, Canada
+                                Located in Dubai, UAE
                             </Text>
                             <Text style={styles.cardDescription}>
-                                The CN Tower is a 553.3 m-high concrete communications and observation tower in Toronto, Ontario, Canada. Completed in 1976, it is located in downtown Toronto, built on the former Railway Lands.
+                                The Burj Khalifa is a skyscraper in Dubai, United Arab Emirates. It is the world's tallest structure. With a total height of 829.8 m
                             </Text>
                             <Text style={styles.cardFooter}>
-                                20 mins away
+                                1.5 hours away
                             </Text>
                         </View>
                     </View>
