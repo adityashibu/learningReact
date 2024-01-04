@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     },
 
     elevated: {
-        backgroundColor: 'white',
+        backgroundColor: 'lightgray',
         shadowColor: 'red',
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity: 1,
