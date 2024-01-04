@@ -23,7 +23,7 @@ export default function ActionCard() {
                     style={styles.cardImage}
                 />
                 <View style={styles.bodyContainer}>
-                    <Text>
+                    <Text style={styles.body}>
                         The best food blogs and social media influencers from the award-winning publisher of Saveur Magazine. Get the latest food news, recipes, and trends, and join us in celebrating the chefs and other artisans who make the good stuff.
                     </Text>
                 </View>
@@ -31,7 +31,7 @@ export default function ActionCard() {
                     <TouchableOpacity
                         onPress={() => openWebsite('https://www.saveur.com/')}
                     >
-                        <Text>Read More</Text>
+                        <Text style={styles.link}>Read More</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -50,20 +50,49 @@ const styles = StyleSheet.create({
         fontFamily: 'monospace',
         marginTop: 30,
         marginBottom: 30,
-        marginHorizontal: 20,
     },
 
-    card: {},
+    card: {
+        width: 350,
+        height: 585,
+        borderRadius: 10,
+        backgroundColor: 'lightgray',
+        marginBottom: 15,
+    },
 
-    elevated: {},
+    elevated: {
+        elevation: 5,
+        shadowColor: 'black',
+    },
 
-    headingContainer: {},
+    headingContainer: {
+        marginHorizontal: 15,
+        color: 'black',
+    },
 
     cardImage: {
         height: 300,
+        borderRadius: 10,
+        marginHorizontal: 15,
     },
 
-    bodyContainer: {},
+    bodyContainer: {
+        marginTop: 20,
+        marginHorizontal: 20,
+    },
 
-    footerContainer: {},
+    body: {
+        fontSize: 13,
+        fontFamily: 'monospace',
+        color: 'black',
+    },
+
+    footerContainer: {
+        marginHorizontal: 20,
+    },
+
+    link: {
+        marginTop: 10,
+        color: 'blue',
+    },
 });
