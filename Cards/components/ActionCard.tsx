@@ -9,7 +9,7 @@ export default function ActionCard() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.headingtext}>Blog Card</Text>
+            <Text style={styles.headingtext}>Action Card</Text>
             <View style={[styles.card, styles.elevated]}>
                 <View style={styles.headingContainer}>
                     <Text style={styles.headingtext}>
