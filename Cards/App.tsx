@@ -5,15 +5,19 @@ import FlatCards from './components/FlatCards';
 import ElevatedCard from './components/ScrollCard';
 import FancyCard from './components/FancyCard';
 import ScrollFancyCards from './components/ScrollFancyCards';
+import ActionCard from './components/ActionCard';
 
 function App() {
   return (
     <SafeAreaView>
       <ScrollView>
+
         <FlatCards />
         <ElevatedCard />
         <FancyCard />
         <ScrollFancyCards />
+        <ActionCard />
+
       </ScrollView>
     </SafeAreaView>
   );
