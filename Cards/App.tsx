@@ -7,6 +7,7 @@ import FancyCard from './components/FancyCard';
 import ScrollFancyCards from './components/ScrollFancyCards';
 import ActionCard from './components/ActionCard';
 import ScrollActionCard from './components/ScrollActionCard';
+import ContactList from './components/ContactList';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <ScrollFancyCards />
         <ActionCard />
         <ScrollActionCard />
+        <ContactList />
 
       </ScrollView>
     </SafeAreaView>
