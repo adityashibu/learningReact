@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#284387',
         padding: 10,
         borderRadius: 10,
+        alignItems: 'center',
     },
 
     elevated: {
@@ -93,7 +94,6 @@ const styles = StyleSheet.create({
 
     userContent: {
         marginLeft: 15,
-        marginTop: 7,
     },
 
     userName: {
