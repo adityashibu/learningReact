@@ -8,6 +8,7 @@ import ScrollFancyCards from './components/ScrollFancyCards';
 import ActionCard from './components/ActionCard';
 import ScrollActionCard from './components/ScrollActionCard';
 import ContactList from './components/ContactList';
+import WhatsappStyleCards from './components/WhatsappStyleCards';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <ActionCard />
         <ScrollActionCard />
         <ContactList />
+        <WhatsappStyleCards />
 
       </ScrollView>
     </SafeAreaView>
