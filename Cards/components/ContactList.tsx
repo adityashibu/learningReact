@@ -22,6 +22,12 @@ export default function ContactList() {
             status: 'Hey there! I am definitely using WhatsApp.',
             imageUrl: 'https://cdn1.iconfinder.com/data/icons/ui-line-basic-0-3-1/32/UI_Website_Interface_User_Profile-512.png',
         },
+        {
+            uid: 4,
+            name: 'Jane Smith',
+            status: 'Hey there! I am using WhatsApp from today.',
+            imageUrl: 'https://cdn1.iconfinder.com/data/icons/ui-line-basic-0-3-1/32/UI_Website_Interface_User_Profile-512.png',
+        },
     ];
 
     return (
@@ -65,7 +71,7 @@ const styles = StyleSheet.create({
 
     userCard: {
         height: 380,
-        width: 300,
+        width: 270,
         backgroundColor: '#d2c2d1',
         marginHorizontal: 10,
         marginVertical: 10,
