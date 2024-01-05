@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     },
 
     elevated: {
-        elevation: 10,
+        elevation: 5,
         shadowColor: 'black',
     },
 
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     },
 
     linkElevated: {
-        elevation: 10,
+        elevation: 5,
         shadowColor: 'black',
         shadowOpacity: 1,
         shadowOffset: {
