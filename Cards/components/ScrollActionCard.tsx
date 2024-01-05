@@ -33,7 +33,7 @@ export default function ScrollActionCard() {
                         <TouchableOpacity
                             onPress={() => openWebsite('https://www.saveur.com/')}
                         >
-                            <Text style={styles.link}>Read More</Text>
+                            <Text style={[styles.link, styles.linkElevated]}>Read More</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -59,13 +59,13 @@ export default function ScrollActionCard() {
                         <TouchableOpacity
                             onPress={() => openWebsite('https://www.saveur.com/')}
                         >
-                            <Text style={styles.link}>Read More</Text>
+                            <Text style={[styles.link, styles.linkElevated]}>Read More</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             onPress={() => openWebsite('https://www.saveur.com/')}
                         >
-                            <Text style={styles.link}>Follow Me</Text>
+                            <Text style={[styles.link, styles.linkElevated]}>Follow Me</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     },
 
     elevated: {
-        elevation: 5,
+        elevation: 10,
         shadowColor: 'black',
     },
 
@@ -110,6 +110,8 @@ const styles = StyleSheet.create({
         height: 300,
         borderRadius: 10,
         marginHorizontal: 15,
+        borderColor: 'black',
+        borderWidth: 1,
     },
 
     bodyContainer: {
@@ -137,5 +139,15 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
+    },
+
+    linkElevated: {
+        elevation: 10,
+        shadowColor: 'black',
+        shadowOpacity: 1,
+        shadowOffset: {
+            width: 10,
+            height: 10,
+        },
     },
 });
