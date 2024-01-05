@@ -38,7 +38,7 @@ export default function ContactList() {
 
             <ScrollView horizontal>
                 {contacts.map(({ uid, name, status, imageUrl }) => (
-                    <View key={uid} style={styles.userCard}>
+                    <View key={uid} style={[styles.userCard, styles.elevated]}>
                         <Image
                             source={{
                                 uri: imageUrl,
@@ -74,8 +74,13 @@ const styles = StyleSheet.create({
         width: 270,
         backgroundColor: '#d2c2d1',
         marginHorizontal: 10,
-        marginVertical: 10,
+        marginVertical: 15,
         borderRadius: 10,
+    },
+
+    elevated: {
+        elevation: 5,
+        shadowColor: 'black',
     },
 
     userImage: {
