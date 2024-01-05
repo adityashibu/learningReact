@@ -61,6 +61,12 @@ export default function ScrollActionCard() {
                         >
                             <Text style={styles.link}>Read More</Text>
                         </TouchableOpacity>
+
+                        <TouchableOpacity
+                            onPress={() => openWebsite('https://www.saveur.com/')}
+                        >
+                            <Text style={styles.link}>Follow Me</Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ScrollView>
@@ -83,7 +89,7 @@ const styles = StyleSheet.create({
 
     card: {
         width: 350,
-        height: 585,
+        height: 620,
         borderRadius: 10,
         backgroundColor: 'lightgray',
         marginBottom: 15,
@@ -119,10 +125,17 @@ const styles = StyleSheet.create({
 
     footerContainer: {
         marginHorizontal: 20,
+        justifyContent: 'space-evenly',
+        flexDirection: 'row',
+        marginTop: 10,
     },
 
     link: {
         marginTop: 10,
-        color: 'blue',
+        color: 'white',
+        backgroundColor: '#284387',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 5,
     },
 });
