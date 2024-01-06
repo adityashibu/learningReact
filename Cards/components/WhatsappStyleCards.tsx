@@ -28,30 +28,42 @@ export default function WhatsappStyleCards() {
             status: 'Hey there! I am using WhatsApp from today.',
             imageUrl: 'https://cdn1.iconfinder.com/data/icons/ui-line-basic-0-3-1/32/UI_Website_Interface_User_Profile-512.png',
         },
+        {
+            uid: 5,
+            name: 'Moe Doe',
+            status: 'Hey there! I am using WhatsApp.',
+            imageUrl: 'https://cdn1.iconfinder.com/data/icons/ui-line-basic-0-3-1/32/UI_Website_Interface_User_Profile-512.png',
+        },
+        {
+            uid: 6,
+            name: 'Joe Doe',
+            status: 'Hey there! I am not using WhatsApp.',
+            imageUrl: 'https://cdn1.iconfinder.com/data/icons/ui-line-basic-0-3-1/32/UI_Website_Interface_User_Profile-512.png',
+        },
     ];
 
     return (
-        <View>
-            <View style={styles.container}>
-                <Text style={styles.headingtext}>Contact List - Vertical Scroll</Text>
-            </View>
+        <View style={styles.container}>
+            <Text style={styles.headingtext}>Contact List - Internal Scroll</Text>
 
-            <ScrollView>
-                {contacts.map(({ uid, name, status, imageUrl }) => (
-                    <View key={uid} style={[styles.userCard, styles.elevated]}>
-                        <Image
-                            source={{
-                                uri: imageUrl,
-                            }}
-                            style={styles.userImage}
-                        />
-                        <View style={styles.userContent}>
-                            <Text style={styles.userName}>{name}</Text>
-                            <Text style={styles.userStatus}>{status}</Text>
+            <View style={styles.scrollContainer}>
+                <ScrollView>
+                    {contacts.map(({ uid, name, status, imageUrl }) => (
+                        <View key={uid} style={[styles.userCard, styles.elevated]}>
+                            <Image
+                                source={{
+                                    uri: imageUrl,
+                                }}
+                                style={styles.userImage}
+                            />
+                            <View style={styles.userContent}>
+                                <Text style={styles.userName}>{name}</Text>
+                                <Text style={styles.userStatus}>{status}</Text>
+                            </View>
                         </View>
-                    </View>
-                ))}
-            </ScrollView>
+                    ))}
+                </ScrollView>
+            </View>
         </View>
     );
 }
@@ -59,6 +71,11 @@ export default function WhatsappStyleCards() {
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
+    },
+
+    scrollContainer: {
+        flex: 1,
+        width: '100%',
     },
 
     headingtext: {
